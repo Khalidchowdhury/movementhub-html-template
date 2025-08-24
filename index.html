@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovementHub</title>
+
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="100">
+
+
+    <!-- Header Section Start -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">MOVEMENT<b>HUB</b></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <!-- এখানে active ক্লাসটি যোগ করা হয়েছে -->
+                        <a class="nav-link active" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#software">Software</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pricing">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Header Section End-->
+
+
+    <!-- Hero Section Start -->
+    <div id="heroSlider" class="carousel slide hero-slider" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroSlider" data-bs-slide-to="0" class="active" aria-current="true"
+                aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#heroSlider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#heroSlider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" style="background-image: url('assets/img/bg 1.jpg');">
+                <div class="carousel-caption">
+                    <p class="subtitle">Intelligent Inventory Management</p>
+                    <h1 class="main-title" data-title="NEVER RUN OUT"></h1>
+                    <p class="description">Automatic re-order notifications ensure you're always stocked.</p>
+                    <a href="#" class="btn btn-custom">START TRACKING TODAY</a>
+                </div>
+            </div>
+            <div class="carousel-item" style="background-image: url('assets/img/bg 2.jpg');">
+                <div class="carousel-caption">
+                    <p class="subtitle">Efficient Stock Control</p>
+                    <h1 class="main-title" data-title="STAY ORGANIZED"></h1>
+                    <p class="description">Keep your stock in perfect order, always.</p>
+                    <a href="#" class="btn btn-custom">LEARN MORE</a>
+                </div>
+            </div>
+            <div class="carousel-item" style="background-image: url('assets/img/bg 3.jpg');">
+                <div class="carousel-caption">
+                    <p class="subtitle">Real-time Analytics</p>
+                    <h1 class="main-title" data-title="MAKE SMARTER DECISIONS"></h1>
+                    <p class="description">Get insights to optimize your inventory.</p>
+                    <a href="#" class="btn btn-custom">VIEW DASHBOARD</a>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroSlider" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroSlider" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- Hero Section end -->
+
+
+    <!-- Feature Section Start -->
+    <section class="features-section" id="features" data-aos="fade-up">
+        <div class="container">
+            <div class="section-header">
+                <h2>Key Features</h2>
+                <p>COMPLETE CONTROL OF YOUR MARKETING INVESTMENTS</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-item">
+                        <div class="icon"><i class="fas fa-globe"></i></div>
+                        <div class="content">
+                            <h4>MULTI-USER COLLABORATION</h4>
+                            <p>Secure role-based access keeps your entire marketing team synchronized across all
+                                locations and events.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-item">
+                        <div class="icon"><i class="fas fa-layer-group"></i></div>
+                        <div class="content">
+                            <h4>AUTOMATED QR CODES</h4>
+                            <p>Every asset receives a unique QR code that unlocks complete item details, history, and
+                                availability with a simple scan.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-item">
+                        <div class="icon"><i class="fas fa-bars"></i></div>
+                        <div class="content">
+                            <h4>VENDOR MANAGEMENT</h4>
+                            <p>Centralized vendor database with complete contact information ensures fast reordering and
+                                consistent purchasing.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-item">
+                        <div class="icon"><i class="far fa-file-alt"></i></div>
+                        <div class="content">
+                            <h4>COMPREHENSIVE REPORTING</h4>
+                            <p>Export detailed inventory reports, check-out logs, and asset histories for complete
+                                budget transparency and ROI tracking.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-item">
+                        <div class="icon"><i class="far fa-user"></i></div>
+                        <div class="content">
+                            <h4>DUAL ASSET TRACKING</h4>
+                            <p>Specialized handling for both transactional assets (swag, giveaways) and permanent assets
+                                (displays, equipment) in one unified system.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-item">
+                        <div class="icon"><i class="fas fa-desktop"></i></div>
+                        <div class="content">
+                            <h4>LOCATION MANAGEMENT</h4>
+                            <p>Track assets across multiple storage locations, events, and offices with real-time
+                                visibility of all marketing resources.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Feature Section End -->
+
+
+    <!-- Software Section Start -->
+    <section class="software-section" id="software" data-aos="fade-up">
+        <div class="container section-header">
+            <h2>Powerful Yet Intuitive Software</h2>
+            <p>END-TO-END MARKETING ASSET MANAGEMENT SOLUTION</p>
+        </div>
+        <div class="container-fluid slider-container">
+            <div class="asset-slider">
+                <!-- Slide 1 -->
+                <div class="slide-item" data-bs-toggle="modal" data-bs-target="#assetModal"
+                    data-title="Asset Management Dashboard" data-img="assets/img/1.jpg">
+                    <img src="assets/img/1.jpg" alt="Asset Management">
+                    <div class="overlay">
+                        <h4>ASSET</h4>
+                        <div class="btn-management">MANAGEMENT</div>
+                    </div>
+                </div>
+                <!-- Slide 2 to 8 -->
+                <div class="slide-item" data-bs-toggle="modal" data-bs-target="#assetModal"
+                    data-title="Location Management System" data-img="assets/img/2.jpg"> <img src="assets/img/2.jpg"
+                        alt="Location Management">
+                    <div class="overlay">
+                        <h4>LOCATION</h4>
+                        <div class="btn-management">MANAGEMENT</div>
+                    </div>
+                </div>
+                <div class="slide-item" data-bs-toggle="modal" data-bs-target="#assetModal"
+                    data-title="User Management Interface" data-img="assets/img/3.jpg"> <img src="assets/img/3.jpg"
+                        alt="User Management">
+                    <div class="overlay">
+                        <h4>USER</h4>
+                        <div class="btn-management">MANAGEMENT</div>
+                    </div>
+                </div>
+                <div class="slide-item" data-bs-toggle="modal" data-bs-target="#assetModal"
+                    data-title="Vendor Management Portal" data-img="assets/img/4.jpg"> <img src="assets/img/4.jpg"
+                        alt="Vendor Management">
+                    <div class="overlay">
+                        <h4>VENDOR</h4>
+                        <div class="btn-management">MANAGEMENT</div>
+                    </div>
+                </div>
+                <div class="slide-item" data-bs-toggle="modal" data-bs-target="#assetModal"
+                    data-title="Inventory Overview" data-img="assets/img/1.jpg"> <img src="assets/img/1.jpg"
+                        alt="Inventory">
+                    <div class="overlay">
+                        <h4>INVENTORY</h4>
+                        <div class="btn-management">MANAGEMENT</div>
+                    </div>
+                </div>
+                <div class="slide-item" data-bs-toggle="modal" data-bs-target="#assetModal"
+                    data-title="Company Profiles" data-img="assets/img/2.jpg"> <img src="assets/img/2.jpg"
+                        alt="Companies">
+                    <div class="overlay">
+                        <h4>COMPANIES</h4>
+                        <div class="btn-management">MANAGEMENT</div>
+                    </div>
+                </div>
+                <div class="slide-item" data-bs-toggle="modal" data-bs-target="#assetModal"
+                    data-title="Reporting & Analytics" data-img="assets/img/3.jpg"> <img src="assets/img/3.jpg"
+                        alt="Reports">
+                    <div class="overlay">
+                        <h4>REPORTS</h4>
+                        <div class="btn-management">MANAGEMENT</div>
+                    </div>
+                </div>
+                <div class="slide-item" data-bs-toggle="modal" data-bs-target="#assetModal" data-title="System Settings"
+                    data-img="assets/img/4.jpg"> <img src="assets/img/4.jpg" alt="Settings">
+                    <div class="overlay">
+                        <h4>SETTINGS</h4>
+                        <div class="btn-management">MANAGEMENT</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Software Section End -->
+
+    <!-- Modal for Software Section -->
+    <div class="modal fade" id="assetModal" tabindex="-1" aria-labelledby="assetModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="assetModalLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>This is a demonstration of the modal popup. The content can be customized for each item.</p>
+                    <img id="modalImage" src="" alt="Modal Image" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Why Choose us Section Start -->
+    <section class="why-choose-us" id="why-choose-us">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Companies Choose <span>movementHub</span></h2>
+                <p>Our marketing asset management system gives you complete control, saving time, reducing waste, and
+                    maximizing ROI.</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                    <div class="feature-card w-100">
+                        <div class="icon"><i class="fas fa-wallet"></i></div>
+                        <h3>Cost Control</h3>
+                        <p>Eliminate redundant purchases and wasted materials by always knowing what assets you have and
+                            where they're located.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                    <div class="feature-card w-100">
+                        <div class="icon"><i class="fas fa-chart-line"></i></div>
+                        <h3>ROI Visibility</h3>
+                        <p>Track usage, distribution, and effectiveness of every marketing asset to optimize your
+                            promotional investments.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                    <div class="feature-card w-100">
+                        <div class="icon"><i class="far fa-clock"></i></div>
+                        <h3>Time Savings</h3>
+                        <p>Stop wasting hours searching for items or managing spreadsheets. Get instant access to all
+                            asset information.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Why Choose us Section End -->
+
+
+    <!-- Pricing Section start -->
+    <section class="pricing-section" id="pricing"">
+        <div class=" container">
+        <div class="section-header">
+            <h2>Simple, Transparent Pricing</h2>
+            <p>Choose the plan that fits your marketing asset management needs</p>
+        </div>
+        <div class="row justify-content-center align-items-center">
+            <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                <div class="pricing-card">
+                    <div class="card-header">Basic</div>
+                    <div class="card-price"><span class="price-value">$25</span>
+                        <div class="price-period">Per Month</div>
+                    </div>
+                    <ul class="feature-list">
+                        <li>Up to 20 Assets</li>
+                        <li>2 User Accounts</li>
+                        <li>3 Storage Locations</li>
+                        <li>Basic Reporting</li>
+                        <li>Email Support</li>
+                        <li>QR Code Generation</li>
+                    </ul>
+                    <div class="card-footer"><a href="#" class="btn btn-outline-dark btn-custom">Start Today</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                <div class="pricing-card standard-plan">
+                    <div class="card-header">Standard</div>
+                    <div class="card-price"><span class="price-value">$99</span>
+                        <div class="price-period">Per Month</div>
+                    </div>
+                    <ul class="feature-list">
+                        <li>Up to 100 Assets</li>
+                        <li>4 User Accounts</li>
+                        <li>10 Storage Locations</li>
+                        <li>Standard Reporting</li>
+                        <li>Email Support</li>
+                        <li>Mobile Access</li>
+                    </ul>
+                    <div class="card-footer"><a href="#" class="btn btn-primary-custom">Start Today</a></div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="pricing-card">
+                    <div class="card-header">Enterprise</div>
+                    <div class="card-price"><span class="price-value">$CALL</span>
+                        <div class="price-period">Per Month</div>
+                    </div>
+                    <ul class="feature-list">
+                        <li>Unlimited Assets</li>
+                        <li>Unlimited User Accounts</li>
+                        <li>Unlimited Storage Locations</li>
+                        <li>Advanced Reporting</li>
+                        <li>API Integration</li>
+                        <li>Premium Support</li>
+                    </ul>
+                    <div class="card-footer"><a href="#" class="btn btn-outline-dark btn-custom">Call for
+                            Information</a></div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- Pricing Section End -->
+
+    <!-- Contact Section start -->
+    <section class="contact-section" id="contact"">
+        <div class=" container">
+        <div class="section-header">
+            <h2>Get Started Today</h2>
+            <p>Ready to take control of your marketing assets? Contact us to schedule a demo or start your free
+                trial.</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-5">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <ul class="contact-details">
+                        <li><span class="icon"><i class="fas fa-map-marker-alt"></i></span><span>Address: New
+                                York</span></li>
+                        <li><span class="icon"><i class="fas fa-phone-alt"></i></span><span>Phone: (315)
+                                565-1544</span></li>
+                        <li><span class="icon"><i class="fas fa-envelope"></i></span><a
+                                href="mailto:iTrack@movementhub.com">Email: iTrack@movementhub.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <form class="contact-form">
+                    <div class="row">
+                        <div class="col-md-6 mb-3"><label for="firstName" class="form-label">First
+                                Name</label><input type="text" class="form-control" id="firstName"></div>
+                        <div class="col-md-6 mb-3"><label for="lastName" class="form-label">Last Name</label><input
+                                type="text" class="form-control" id="lastName"></div>
+                    </div>
+                    <div class="mb-3"><label for="email" class="form-label">Email Address</label><input type="email"
+                            class="form-control" id="email"></div>
+                    <div class="mb-4"><label for="message" class="form-label">How Can We Help You?</label><textarea
+                            class="form-control" id="message" rows="4"></textarea></div>
+                    <button type="submit" class="btn btn-submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- Contact Section end -->
+
+    <!-- Footer Section start -->
+    <footer class="site-footer">
+        <div class="get-in-touch-tag">Get in Touch</div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="footer-about">
+                        <h5>ABOUT MOVEMENTHUB</h5>
+                        <p>A comprehensive marketing asset management system designed to help marketing teams track,
+                            manage, and optimize their promotional items.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <h3 class="logo">MOVEMENTHUB</h3>
+                        <p class="copyright mb-0">&copy; Copyright 2025. All Rights Reserved.</p>
+                    </div>
+                    <div class="footer-nav">
+                        <a href="#contact">&gt; Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Back to Top -->
+    <button id="backToTopBtn" title="Back To Top"></button>
+
+
+    <!-- JS CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Custtom JS File -->
+    <script src="assets/js/app.js"></script>
+
+</body>
+
+</html>
